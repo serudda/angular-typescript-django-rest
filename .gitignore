@@ -1,35 +1,46 @@
 .DS_Store
 .idea
 
-*.iml
+# SERVER SIDE
+##########################
+
+server/*.iml
 auto_default_code/
 
 # python fabric
-fabric/
-fabfile/
+server/fabric/
+server/fabfile/
 
 # django migrations
-djangoapps/*/migrations
+server/djangoapps/*/migrations
 
 # Python compiled byte code
 *.pyc
 
 # SQLite3 database
-*.sqlite3
+server/*.sqlite3
 
 # Staticfiles
-staticfiles/
+server/staticfiles/
 
 # vrtualenv
-venv/
+server/venv/
 
 #backup
-backup/
+server/backup/
 
 #log
-logs/*.log
+server/logs/*.log
 
 # Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
+server/.elasticbeanstalk/*
+server/!.elasticbeanstalk/*.cfg.yml
+server/!.elasticbeanstalk/*.global.yml
+
+
+# CLIENT SIDE
+##########################
+
+client/bower_components
+client/node_modules
+client/typings
