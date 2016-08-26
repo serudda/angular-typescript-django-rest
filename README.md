@@ -2,7 +2,7 @@
 
 ##Overview
 
-It's a base structure (Full Stack Single Page Application) for the starter who want to start a web application. 
+It's a base structure (Full Stack Single Page Application) for the starter who want to start a web application.
 This repository has 2 separate modules: **Client** module and **Server** module.
 
 ###Client
@@ -66,12 +66,12 @@ Open a terminal **(on root project/server)**:
 
 On Django when you create a new model of data (example: posts model, authentication model, etc) you have to create a specific migration for each model.
 
-In this case, we have djangoapps/authentication model and djangoapps/posts model (the latter, I leave it as an example for when you need to create a new app in the future). 
+In this case, we have djangoapps/authentication model and djangoapps/posts model (the latter, I leave it as an example for when you need to create a new app in the future).
 
 In order to create migrations for each models (in this case 'authentication' and 'posts') you have to:
-`python manage.py makemigrations <app_label>` in our case would be `python manage.py makemigrations authentication` and `python manage.py makemigrations posts` 
+`python manage.py makemigrations <app_label>` in our case would be `python manage.py makemigrations authentication` and `python manage.py makemigrations posts`
 
-In order to see If you create each migrations well you can use the following command: 
+In order to see If you create each migrations well you can use the following command:
 `python manage.py showmigrations`
 You should see the migrations list, including 'authentication' and 'posts' models (with X).
 
@@ -87,8 +87,11 @@ In order to test that all it's right, you should create a superuser in order to 
 - `python manage.py createsuperuser`
 
 
-#### Usage for REST API Server 
+#### Usage for REST API Server
 
 Here if everything is OK, you should run server and go to localhost on browser, you should be able to see Django Rest Admin Page.
 
 - `python manage.py runserver`
+
+
+**Reference:** [https://github.com/shalomeir/snippod-starter-demo-app-server](https://github.com/shalomeir/snippod-starter-demo-app-server)
